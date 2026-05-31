@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Firmware Engineer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+      --muted: #8b949e;
+      --border: #30363d;
+      --card-bg: #161b22;
+      --font-mono: "SF Mono", "Cascadia Code", "Fira Code", Consolas, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #58a6ff, #a371f7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+      font-family: var(--font-mono);
+    }
+
+    .header-text h1 {
+      font-size: 1.75rem;
+      color: var(--heading);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .header-text .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.15rem;
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* About */
+    .about p {
+      font-size: 1rem;
+      color: var(--text);
+      max-width: 520px;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .link-item:hover {
+      border-color: var(--accent);
+      background: #1c2333;
+    }
+
+    .link-icon {
+      font-size: 1.25rem;
+      width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-label {
+      font-weight: 600;
+      color: var(--heading);
+      font-size: 0.95rem;
+    }
+
+    .link-url {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <div class="avatar">N</div>
+      <div class="header-text">
+        <h1>norlag</h1>
+        <div class="tagline">Embedded Firmware Engineer &nbsp;|&nbsp; Lausanne, CH</div>
+      </div>
+    </div>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        Senior embedded firmware engineer specializing in STM32 microcontrollers,
+        ARM Cortex-M, and real-time systems. I write clean, efficient C code
+        and turn hardware specs into working firmware.
+      </p>
+    </section>
+
+    <section>
+      <h2>Stack</h2>
+      <div class="skills">
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">STM32</span>
+        <span class="skill-tag">STM32CubeIDE</span>
+        <span class="skill-tag">ARM Cortex-M</span>
+        <span class="skill-tag">HAL / LL</span>
+        <span class="skill-tag">FreeRTOS</span>
+        <span class="skill-tag">OpenOCD</span>
+        <span class="skill-tag">JTAG</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">I2C / SPI / UART</span>
+        <span class="skill-tag">CAN</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="links">
+        <a class="link-item" href="https://github.com/norlag" target="_blank" rel="noopener">
+          <span class="link-icon">&#128025;</span>
+          <div class="link-text">
+            <span class="link-label">GitHub</span>
+            <span class="link-url">github.com/norlag</span>
+          </div>
+        </a>
+        <a class="link-item" href="mailto:contact@norlag.io">
+          <span class="link-icon">&#9993;</span>
+          <div class="link-text">
+            <span class="link-label">Email</span>
+            <span class="link-url">contact@norlag.io</span>
+          </div>
+        </a>
+        <a class="link-item" href="https://linkedin.com/in/norlag" target="_blank" rel="noopener">
+          <span class="link-icon">&#128188;</span>
+          <div class="link-text">
+            <span class="link-label">LinkedIn</span>
+            <span class="link-url">linkedin.com/in/norlag</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with nothing but HTML &amp; CSS &nbsp;&#8212;&nbsp; hosted on <a href="https://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</body>
+</html>
